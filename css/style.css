@@ -138,13 +138,10 @@ margin-left: auto;
 
 .hero-header{
     background-color: #2E2F42;
-    
+    padding: 188px 0;
 }
 
-.hh-container{
-   padding-top: 188px;
-   padding-bottom: 188px;
-}
+
 
 .hh-title{
     max-width: 496px;
@@ -162,8 +159,9 @@ margin-left: auto;
 .hh-button{
     display: block;
     margin: 0 auto;
-    width: 168px;
+    min-width: 169px;
     height: 56px;
+    border:none;
     border-radius: 4px;
     font-family: "Roboto", sans-serif;
     color: #FFFFFF;
@@ -200,11 +198,13 @@ margin-left: auto;
         overflow: hidden;
 }
 
+.features{
+    padding: 120px 0
+}
+
 .features-list{
     display: flex;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
 
 }
 
@@ -237,9 +237,10 @@ margin-left: auto;
 
 .team{
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 .team-title{
-    padding: 120px 0 72px 0;
+    margin-bottom: 72px;
     color: #2E2F42;
     text-transform: capitalize;
     font-weight: 700;
@@ -252,23 +253,28 @@ margin-left: auto;
 .team-cards  {
 display: flex;
 gap: 24px;
-    background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08)
+    
+    
+    
    
 }
 
 .team-member{
-    width:calc((100%-72)/4)
-
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #FFFFFF;
+    width:calc((100%-72)/4);
+    border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    
 }
+
 .tc-bottom{
 padding: 32px 0;
+
 }
 
-.team-member{
-width: calc((100%-72px)/4);
-}
 
 .team-name{
     margin-bottom: 8px;
@@ -293,8 +299,13 @@ width: calc((100%-72px)/4);
 
 /* portfolio */
 
-.portfolio-title {
+.our-portfolio{
     padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-title {
+    margin-bottom: 72px;
     color: #2E2F42;
     text-transform: capitalize;
     font-weight: 700;
@@ -310,8 +321,6 @@ width: calc((100%-72px)/4);
 .portfolio-cards{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 72px;
-    padding-bottom: 120px;
     row-gap: 48px;
     column-gap: 24px;
 }
@@ -323,8 +332,7 @@ width: calc((100%-72px)/4);
 border-bottom: 1px solid #e7e9fc;
 border-left: 1px solid #e7e9fc;
 border-right: 1px solid #e7e9fc; 
-padding: 32px 0;
-padding-left: 16px;
+padding: 32px 16px;
 }
 
 .portfolio-name{
