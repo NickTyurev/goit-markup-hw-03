@@ -209,7 +209,7 @@ margin-left: auto;
 }
 
 .features-item{
-    width: calc((100%-72)/4);
+    width: calc((100% - 72px) / 4);
 }
 
 .features-title{
